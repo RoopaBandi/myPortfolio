@@ -169,5 +169,9 @@ window.addEventListener("load", () => {
     ease: "back.out(1.7)"
   });
 });
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
+
 
 

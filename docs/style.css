@@ -226,7 +226,7 @@ section h1, section h2{
   text-decoration: underline;
 }
 
-.course1 a,.course2 a,course3 a{
+.course1 a,.course2 a,.course3 a{
     text-decoration: none;
     color: #0F52BA;
     font-weight: bold;
@@ -588,7 +588,67 @@ section {
 #landing {
   display: block; /* show landing page first */
 }
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #333;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0077b6;
+}
 
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  
+}
+
+/* 📱 Mobile view */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 15px;
+    background-color:skyblue;
+  }
+
+  .navbar .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
 
 
 
